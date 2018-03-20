@@ -1,0 +1,148 @@
+@font-face {
+    font-family: all;
+    src: url(sansation_light.woff);
+}
+
+nav {
+	background-color: black;
+	font-style: bold;
+
+}
+
+#mainNav {
+
+}
+
+.nav-link,ul,li {
+	color: white;
+}
+
+.nav-item {
+	color: white;
+}
+.navbar-brand {
+	font-family: serif;
+	font-size: 30px;
+}
+
+#navJoblist {
+    position: relative;
+}
+
+#navJoblist > ul > li :hover{
+    background-color: rgb(80,85,90);
+}
+#navJoblist > ul > li > a {
+    width: inherit;
+    height: auto;
+    color: white;
+}
+
+
+.sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+div.c-wrapper{
+    width: 80%; /* for example */
+    margin: auto;
+}
+
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img{
+width: 100%; /* use this, or not */
+margin: auto;
+}
+
+.ul-general {
+    list-style-type: none;
+}
+
+.ul-general > li {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.ul-general > li > a {
+    color: white;
+}
+
+.ul-general > li :hover, .ul-general > li :focus {
+    color: #f9f9f9;
+}
+
+
+.ul-social-media {
+	display: inline-flex;
+	list-style-type: none;
+}
+.ul-social-media > li {
+    margin-top: 40px;
+	padding-right: 35px;
+}
+.ul-social-media > li > i {
+    padding-right: 10px;
+}
+.ul-social-media :hover {
+    color: #64b5f6;
+    transition-duration: 0.2s;
+}
+
+.bg-pale-blue {
+  background-color: #178bd7 !important;
+}
+
+#creditsFooter {
+    border-top: solid;
+    border-color: rgb(120,120,120);
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 18px;
+    top: 18px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
