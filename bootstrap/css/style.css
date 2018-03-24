@@ -3,14 +3,10 @@
     src: url(sansation_light.woff);
 }
 
-nav {
-	background-color: black;
-	font-style: bold;
-
-}
 
 #mainNav {
-
+    box-sizing: inherit;
+    box-shadow: grey;
 }
 
 .nav-link,ul,li {
@@ -49,27 +45,47 @@ div.c-wrapper{
     margin: auto;
 }
 
+#mainCarousel {
+    background-color: #ffssff;
+}
+
 .carousel-inner > .item > img, 
 .carousel-inner > .item > a > img{
 width: 100%; /* use this, or not */
 margin: auto;
 }
 
+
+.offer-listings {
+    border-style: solid;
+    border-radius: 30px;
+    border-width: thin;
+    border-color: #007bff;
+}
+
+.offer-listings > h4 {
+    padding: 5px;
+    border-bottom: #007bff solid thin; 
+}
+
 .ul-general {
     list-style-type: none;
+    padding: 0;
+    text-align: center;
 }
 
 .ul-general > li {
+    padding-left: 5px;
+    padding-right: 5px;
     display: block;
     width: 100%;
-    padding: 0.25rem 1.5rem;
     clear: both;
     font-weight: 400;
     color: #212529;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
-    border: 0;
+
 }
 
 .ul-general > li > a {
@@ -81,29 +97,34 @@ margin: auto;
 }
 
 
-.ul-social-media {
+.p-social-media {
 	display: inline-flex;
-	list-style-type: none;
 }
-.ul-social-media > li {
-    margin-top: 40px;
+.p-social-media > span {
 	padding-right: 35px;
 }
-.ul-social-media > li > i {
+.p-social-media > span > i {
     padding-right: 10px;
 }
-.ul-social-media :hover {
+.p-social-media :hover {
     color: #64b5f6;
     transition-duration: 0.2s;
 }
 
-.bg-pale-blue {
-  background-color: #178bd7 !important;
+
+
+.mainFooter {
+    padding: 5rem !important;
+}
+
+#accountModal {
 }
 
 #creditsFooter {
     border-top: solid;
     border-color: rgb(120,120,120);
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
 }
 
 #return-to-top {
@@ -145,4 +166,39 @@ margin: auto;
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+}
+
+
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #0f0f0f;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Change styles for extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+
+    .mainFooter {
+        padding: 0rem !important;
+    }
 }

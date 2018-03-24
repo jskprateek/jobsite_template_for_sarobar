@@ -11,3 +11,24 @@ $('#return-to-top').click(function() {      // When arrow is clicked
         scrollTop : 0                       // Scroll to top of body
     }, 500);
 });
+
+
+
+
+
+$(".js-open-modal").click(function(){
+  $("#loginModal").addClass("visible");
+});
+
+$(".js-close-modal").click(function(){
+  $("#loginModal").removeClass("visible");
+});
+
+$(document).click(function(event) {
+  //if you click on anything except the modal itself or the "open modal" link, close the modal
+  if (!$(event.target).closest("#loginModal,.js-open-modal").length) {
+    $("body").find("#loginModal").removeClass("visible");
+  }
+});
+
+

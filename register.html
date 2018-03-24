@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <metae="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Premium Jobs</title>
 
      <!-- Bootstrap core CSS -->
@@ -14,6 +12,7 @@
     <!-- Custom styles for this template -->
     <link href="bootstrap/css/scrolling-nav.css" rel="stylesheet">
     <link href="bootstrap/css/style.css" type="text/css" rel="stylesheet">
+    <link href="bootstrap/css/register-style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--<link rel="stylesheet" type="text/css" href="bootstrap/css/style1.css">
@@ -60,6 +59,9 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#contact">Contact Us</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
             </ul>
             <ul class="nav navbar-nav mr-auto">  
                 <li class="nav-item">
@@ -72,15 +74,15 @@
             </ul>
             <button class="btn btn-outline-primary my-2 mr-2" data-target="#loginModal" data-toggle="modal">Login</button>
 
-            <a href="register.html" class="btn btn-outline-success my-2">Signup</a>
+            <a href="register.html" class="btn btn-outline-secondary my-2">Signup</a>
 
             <div id="loginModal" class="modal fade" role="dialog" data-backdrop="false" aria-hidden="true">        
                 <div class="modal-dialog modal-sm">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <div class="modal-title">
+                            <div style="display: inline-flex; justify-content: space-between;" class="modal-title">
                                 <h5>Login</h5>
-                                <span style="top: 6px; right: 10px;" class="close" data-dismiss="modal"><b>&times</b></span>
+                                <span style="top: 2px; right: 10px;" class="close" data-dismiss="modal"><b>&times</b></span>
                             </div>
                         </div>
                         <div class="modal-body">
@@ -109,15 +111,43 @@
         </div>
     </nav>
 
-    <header style="background-color: #563d7c" class="text-white">
-        <div class="container text-center">
-            <h1>Welcome to Premium Jobs</h1>
-            <p class="lead"> Premium Jobs is a free job portal to provide information of job openings to all job seekers in Nepal.This site is a hub for both the job providers and job seekers. Since job seekers are not aware of most of the job openings, it's an attempt to decrease the gap between the two.
-            </p>
+    <header style="background-color: #e1e1e1" class="text-dark">
+        <div align="center" id="register_div" class="card">
+            <div class="card-title">
+                <h3>Register</h3>
+            </div>
+            <div class="card-body"></div>
+            <form method="POST" action="register.php">
+                <div class="form-group">
+                    <label for="firstname">Firstname: </label>
+                    <input class="" type="text" placeholder="Firstname" name="firstname">
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Lastname: </label>
+                    <input class="" type="text" placeholder="Lastname" name="lastname">
+                </div>
+                <div class="form-group">
+                    <label for="Username">Username: </label>
+                    <input class="" type="text" placeholder="Username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password: </label>
+                    <input class="" type="Password" placeholder="Password" name="password">
+                </div>
+                <div class="form-group">
+                    <label for="password">Confirm Password: </label>
+                    <input class="" type="Password" placeholder="Password" name="confirm_password"> 
+                </div>
+                <div class="card-footer">
+                    <button type="submit" class="formButton signupbtn btn btn-primary">Register</button>
+                    <button  type="reset" class="formButton cancelbtn btn btn-danger">Reset</button>
+                </div>
+            </form>
         </div>
     </header>
 
-    <section style="background-color: #2f5f5f" id="contact" class="text-white">
+
+    <section style="background-color: #334c73" id="contact" class="text-white">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
@@ -132,10 +162,29 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-white">
-      <div id="creditsFooter" class="container-fluid">
-        <p class="text-center">Powered by ABC Company<br>Copyright &copy; Prateek Agrawal. All rights reserved.</p>
-      </div>
-      <a href="javascript:" id="return-to-top"><i class="fa fa-angle-double-up"></i></a>
+        <div id="about" class="container-fluid row mainFooter">
+            <div class="col-sm-12 col-md-6 col-lg-6 px-5">
+                <div class="h3 text-white">About this page</div>
+                <br>
+                <p class="">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs!
+                <h5>To know more about us, <a class="link" href="about.html#about">Click here</a></h5>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 my-sm-2 px-5">
+                <div class="h3 text-white">Find us in Social Media</div>
+                <br>
+                <p class="p-social-media px-3">
+                    <span><i class="fa fa-facebook"></i>Facebook</span>
+                    <span><i class="fa fa-twitter"></i>Twitter</span>
+                    <span><i class="fa fa-github"></i>Github</span>
+                </p>
+            </div>
+        </div>
+        <div id="creditsFooter" class="container-fluid">
+            <p class="text-center">Powered by ABC Company<br>Copyright &copy; Prateek Agrawal. All rights reserved.</p>
+        </div>
+        <a href="javascript:" id="return-to-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
     <!-- /.container -->
     </footer>
     <!-- Bootstrap core JavaScript -->
