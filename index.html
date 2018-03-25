@@ -73,14 +73,14 @@
                     </form>
                 </li>
             </ul>
-            <button class="btn btn-outline-primary my-2 mr-2" data-target="#loginModal" data-toggle="modal">Login</button>
+            <button type="button" class="btn btn-outline-primary my-2 mr-2" data-target="#loginModal" data-toggle="modal">Login</button>
 
             <div id="loginModal" class="modal fade" role="dialog" data-backdrop="false" aria-hidden="true">        
                 <div class="modal-dialog modal-sm">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h4 class="float-left">Login<h4>
-                            <span class="close float-right" data-dismiss="modal">&times</span>
+                            <span class="close float-right" data-dismiss="modal">&times;</span>
                         </div>
                         <div class="modal-body">
                             <form id="loginForm" method="POST" action="login_action.php">
@@ -115,7 +115,7 @@
 
     <div id="mainCarousel" class="container-fluid bg-dark">
         <div class="row">
-            <div id="carouselExampleIndicators" class="col-sm-12 col-md-6 col-lg-6 my-2 carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="col-sm-12 col-md-12 col-lg-6 carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -141,7 +141,7 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div class= class="col-sm-12 col-md-3 col-lg-3 py-2 bg-dark">
+            <div class= class="col-sm-12 col-md-6 col-lg-3 bg-dark mx-auto">
                 <div class="offer-listings mx-1 my-4">
                     <h4 class="text-white text-center">New Jobs</h4>
                     <ul class="ul-general">
@@ -160,7 +160,7 @@
                     </ul>
                 </div>
             </div>
-            <div class= class="col-sm-12 col-md-3 col-lg-3 py-2 bg-dark">
+            <div class= class="col-sm-12 col-md-6 col-lg-3 bg- mx-auto">
                 <div class="offer-listings mx-1 my-4">
                     <h4 class="text-white text-center">Internships</h4>
                     <ul class="ul-general">
@@ -209,19 +209,19 @@
     <!-- Footer -->
     <footer class="bg-dark text-white">
         <div id="about" class="container-fluid row mainFooter">
-            <div class="col-sm-12 col-md-6 col-lg-6 px-5">
+            <div class="col-sm-12 col-md-6 col-lg-6 px-lg-5">
                 <div class="h3 text-white">About this page</div>
                 <br>
                 <p class="">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs!
                 <h5>To know more about us, <a class="link" href="about.html#about">Click here</a></h5>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 my-sm-2 px-5">
+            <div id="div-social" class="text-center col-sm-12 col-md-6 col-lg-6 my-sm-2">
                 <div class="h3 text-white">Find us in Social Media</div>
                 <br>
-                <p class="p-social-media px-3">
-                    <span><i class="fa fa-facebook"></i>Facebook</span>
-                    <span><i class="fa fa-twitter"></i>Twitter</span>
-                    <span><i class="fa fa-github"></i>Github</span>
+                <p class="p-social-media">
+                    <span class="d-block float-left"><i class="fa fa-facebook"></i>Facebook</span>
+                    <span class="d-block float-left"><i class="fa fa-twitter"></i>Twitter</span>
+                    <span class="d-block float-left"><i class="fa fa-github"></i>Github</span>
                 </p>
             </div>
         </div>

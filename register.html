@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Premium Jobs</title>
+    <title>Register-Premium Jobs</title>
 
      <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -101,45 +101,48 @@
         </div>
     </nav>
 
+
+
     <header style="background-color: #e1e1e1" class="text-dark">
-        <div class="container row">
-            <div id="register_div" class="card mx-auto">
-                <div class="card-title">
-                    <h3>Register</h3>
+        <div class="container-fluid">
+           <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 mx-auto">
+                    <div class="container">
+                        <h2 class="text-center">Why Register?</h2>
+                        <ul class="ul-register">
+                            <li>You will be notified about exclusive job offers.</li>
+                            <li>More possibility to be found by the employer.</li>
+                            <li>You can upload and edit your Resume.</li>
+                            <li>And many more.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="card-content"></div>
-                <form method="POST" action="register.php">
-                    <div class="form-group">
-                        <input class="form-control" type="text" placeholder="Firstname" name="firstname">
-                        <input class="form-control" type="text" placeholder="Lastname" name="lastname">
-                        <input class="form-control" type="email" placeholder="Email" name="email">
-                        <input class="form-control" type="text" placeholder="Username" name="username">
-                        <input class="form-control" type="Password" placeholder="Password" name="password">
-                        <input class="form-control" type="Password" placeholder="Confirm Password" name="confirm_password"> 
+                <div class="col-sm-12 col-md-6 col-lg-6 mx-auto">
+                    <div id="div-register" class="container">
+                        <h3>Register</h3>
+                        <hr class="colorgraph">
+                        <form method="POST" action="register.php">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Firstname" name="firstname">
+                                <input class="form-control" type="text" placeholder="Lastname" name="lastname">
+                                <input class="form-control" type="email" placeholder="Email" name="email">
+                                <input class="form-control" type="text" placeholder="Username" name="username">
+                                <input class="form-control" type="Password" placeholder="Password" name="password">
+                                <input class="form-control" type="Password" placeholder="Confirm Password" name="confirm_password"> 
+                            </div>
+                            <div >
+                                <button type="submit" class="form-btn btn btn-primary">Register</button>
+                                <button  type="reset" class="form-btn btn btn-danger">Reset</button>
+                            </div>
+                        </form>
+                        <br>
+                        <br>
+                        <a href="#" data-toggle="modal" data-target="#loginModal">Already have an account?</a>
                     </div>
-                    <div >
-                        <button type="submit" class="form-btn btn btn-primary">Register</button>
-                        <button  type="reset" class="form-btn btn btn-danger">Reset</button>
-                    </div>
-                </form>
-                <br>
-                <br>
-                <a href="#" data-toggle="modal" data-target="#loginModal">Already have an account?</a>
-            </div>
+                </div>
+            </div> 
         </div>
     </header>
-
-
-    <section style="background-color: #334c73" id="contact" class="text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2>Contact us</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 

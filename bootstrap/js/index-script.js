@@ -13,22 +13,17 @@ $('#return-to-top').click(function() {      // When arrow is clicked
 });
 
 
-
-
-
 $(".js-open-modal").click(function(){
-  $("#loginModal").addClass("visible");
+  $(".modal").addClass("visible");
 });
 
 $(".js-close-modal").click(function(){
-  $("#loginModal").removeClass("visible");
+  $(".modal").removeClass("visible");
 });
 
 $(document).click(function(event) {
   //if you click on anything except the modal itself or the "open modal" link, close the modal
-  if (!$(event.target).closest("#loginModal,.js-open-modal").length) {
-    $("body").find("#loginModal").removeClass("visible");
+  if (!$(event.target).closest(".modal,.js-open-modal").length) {
+    $("body").find(".modal").removeClass("visible");
   }
 });
-
-
