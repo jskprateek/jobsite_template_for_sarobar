@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <metae="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Premium Jobs</title>
 
@@ -12,7 +12,6 @@
     <!-- Custom styles for this template -->
     <link href="bootstrap/css/scrolling-nav.css" rel="stylesheet">
     <link href="bootstrap/css/style.css" type="text/css" rel="stylesheet">
-    <link href="bootstrap/css/register-style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--<link rel="stylesheet" type="text/css" href="bootstrap/css/style1.css">
@@ -74,36 +73,27 @@
             </ul>
             <button class="btn btn-outline-primary my-2 mr-2" data-target="#loginModal" data-toggle="modal">Login</button>
 
-            <a href="register.html" class="btn btn-outline-secondary my-2">Signup</a>
-
             <div id="loginModal" class="modal fade" role="dialog" data-backdrop="false" aria-hidden="true">        
                 <div class="modal-dialog modal-sm">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <div style="display: inline-flex; justify-content: space-between;" class="modal-title">
-                                <h5>Login</h5>
-                                <span style="top: 2px; right: 10px;" class="close" data-dismiss="modal"><b>&times</b></span>
-                            </div>
+                            <h4 class="float-left">Login<h4>
+                            <span class="close float-right" data-dismiss="modal">&times</span>
                         </div>
                         <div class="modal-body">
                             <form id="loginForm" method="POST" action="login_action.php">
-                                <div class="form-group">
-                                    <label for="Username">Username: </label>
-                                    <input type="text" placeholder="Username" name="Username">
-                                </div>
-                                <div class="form-group">
-                                    <label for="password">Password: </label>
-                                    <input type="Password" placeholder="Password" name="password">
-                                </div>
-                                <div>
-                                    <button type="submit" class="formButton signupbtn btn btn-primary">Login</button>
-                                    <button  type="reset" class="formButton cancelbtn btn btn-danger">Reset</button>
-                                </div>
+                                <fieldset>
+                                    <input class="form-control" type="text" placeholder="Username" name="Username">
+                                    <input class="form-control" type="Password" placeholder="Password" name="password">
+                                    <div class="my-3">
+                                        <button type="submit" class="login-form-btn btn btn-primary">Login</button>
+                                        <button  type="reset" class="login-form-btn btn btn-danger">Reset</button>
+                                    </div>
+                                </fieldset>
                             </form>
                         </div>
                         <div class="modal-footer justify-content-center">
                             <a href="register.html">Not registered yet? Register!</a>
-                            <button class="btn btn-outline-danger" data-dismiss="modal">Close</button>
                         </div>    
                     </div>
                 </div>
@@ -112,37 +102,30 @@
     </nav>
 
     <header style="background-color: #e1e1e1" class="text-dark">
-        <div align="center" id="register_div" class="card">
-            <div class="card-title">
-                <h3>Register</h3>
+        <div class="container row">
+            <div id="register_div" class="card mx-auto">
+                <div class="card-title">
+                    <h3>Register</h3>
+                </div>
+                <div class="card-content"></div>
+                <form method="POST" action="register.php">
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Firstname" name="firstname">
+                        <input class="form-control" type="text" placeholder="Lastname" name="lastname">
+                        <input class="form-control" type="email" placeholder="Email" name="email">
+                        <input class="form-control" type="text" placeholder="Username" name="username">
+                        <input class="form-control" type="Password" placeholder="Password" name="password">
+                        <input class="form-control" type="Password" placeholder="Confirm Password" name="confirm_password"> 
+                    </div>
+                    <div >
+                        <button type="submit" class="form-btn btn btn-primary">Register</button>
+                        <button  type="reset" class="form-btn btn btn-danger">Reset</button>
+                    </div>
+                </form>
+                <br>
+                <br>
+                <a href="#" data-toggle="modal" data-target="#loginModal">Already have an account?</a>
             </div>
-            <div class="card-body"></div>
-            <form method="POST" action="register.php">
-                <div class="form-group">
-                    <label for="firstname">Firstname: </label>
-                    <input class="" type="text" placeholder="Firstname" name="firstname">
-                </div>
-                <div class="form-group">
-                    <label for="lastname">Lastname: </label>
-                    <input class="" type="text" placeholder="Lastname" name="lastname">
-                </div>
-                <div class="form-group">
-                    <label for="Username">Username: </label>
-                    <input class="" type="text" placeholder="Username" name="username">
-                </div>
-                <div class="form-group">
-                    <label for="password">Password: </label>
-                    <input class="" type="Password" placeholder="Password" name="password">
-                </div>
-                <div class="form-group">
-                    <label for="password">Confirm Password: </label>
-                    <input class="" type="Password" placeholder="Password" name="confirm_password"> 
-                </div>
-                <div class="card-footer">
-                    <button type="submit" class="formButton signupbtn btn btn-primary">Register</button>
-                    <button  type="reset" class="formButton cancelbtn btn btn-danger">Reset</button>
-                </div>
-            </form>
         </div>
     </header>
 
