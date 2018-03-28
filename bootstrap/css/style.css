@@ -6,7 +6,7 @@
 
 #mainNav {
     box-sizing: inherit;
-    box-shadow: grey;
+    box-shadow: 2px 2px 2px 2px rgba(3,3,3,.4);
 }
 
 .nav-link,ul,li {
@@ -57,15 +57,20 @@ margin: auto;
 
 
 .offer-listings {
+    display: block;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
     border-style: solid;
     border-radius: 30px;
-    border-width: thin;
-    border-color: #007bff;
+    border-width: 3px;
+    border-color: #343a40;
 }
 
 .offer-listings > h4 {
     padding: 5px;
-    border-bottom: #007bff solid thin; 
+    border-bottom: #343a40 solid; 
 }
 
 .ul-general {
@@ -111,6 +116,20 @@ margin: auto;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
+}
+
+#div-job-searchbar {
+    /*text-align: center;*/
+    /*border: solid;*/
+}
+.job-searchbar {
+    /*display: inline-block;*/
+    /*background-color: #f8f9fa;*/
+}
+.job-searchbar{
+    /*display: block;*/
+    /*float: left;*/
+    width: 100%;
 }
 
 .p-social-media {
